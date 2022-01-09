@@ -5,7 +5,7 @@ int main()
 	pnode head = NULL;
 	char select;
 	
-	while (scanf("%c", &select)!=0&&scanf("%c",%select)!=EOF) {
+	while (scanf("%c", &select)!=0) {
 		switch (select)
 		{
 		case 'A': {
