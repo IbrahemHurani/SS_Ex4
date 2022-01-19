@@ -38,7 +38,7 @@ int main(int argc, char *argv[])
 		}
 		
 	}
-	printGraph_cmd(head);
+	//printGraph_cmd(head);
 	deleteGraph_cmd(&head);
 	return 0;
 }
