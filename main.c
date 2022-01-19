@@ -1,6 +1,6 @@
 #include"graph.h"
 #include<stdio.h>
-int main()
+int main(int argc, char *argv[])
 {
 	pnode head = NULL;
 	char select;
@@ -18,7 +18,7 @@ int main()
 		}
 		case 'D': {
 			delete_node_cmd(&head);
-			//printGraph_cmd(head);
+			
 			break;
 		}
 		case'S':
@@ -38,6 +38,7 @@ int main()
 		}
 		
 	}
+	printGraph_cmd(head);
 	deleteGraph_cmd(&head);
 	return 0;
 }
