@@ -1,5 +1,6 @@
 #include"graph.h"
 #include<stdio.h>
+#include <sys/stat.h>
 int main(int argc, char *argv[])
 {
 	pnode head = NULL;
