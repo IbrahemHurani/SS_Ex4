@@ -5,8 +5,10 @@ int main(int argc, char *argv[])
 {
 	pnode head = NULL;
 	char select;
-	
-	while (scanf("%c", &select)!=0) {
+	FILE *fileIn;
+	fileIn=stdin;
+	select=fgetc(fileIn);
+	while (select!=EOF) {
 		switch (select)
 		{
 		case 'A': {
@@ -28,7 +30,7 @@ int main(int argc, char *argv[])
 			scanf("%d", &src);
 			scanf("%d", &dest);
 			int temp= shortsPath_cmd(head, src, dest);
-			printf("Dijsktra shortest path: %d\n", temp);
+			printf("Dijsktra shortest path: %d\n",temp);
 			break;
 		}
 		case 'T': {
@@ -37,6 +39,7 @@ int main(int argc, char *argv[])
 		}
 
 		}
+		select=fgetc(fileIn);
 		
 	}
 	//printGraph_cmd(head);
